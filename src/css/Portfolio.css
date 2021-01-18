@@ -1,0 +1,30 @@
+.portfolio {
+  background: url("climber.jpg");
+  height: 100vh;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.portfolio h1 {
+  /* margin: 0; */
+  position: absolute;
+  top: 0;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
+
+.portfolio__imgCard :hover {
+  transform: scale(1.1) !important;
+  color: blueviolet !important;
+  background-color: yellow !important;
+  padding: 50px;
+}

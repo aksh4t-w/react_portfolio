@@ -1,0 +1,51 @@
+.header {
+  background: #96b672 url("46526.png") no-repeat top center;
+  height: 100vh;
+  -webkit-background-size: cover !important;
+  /* -webkit-transform: rotate(90deg); */
+  /* margin-top: -20px; */
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* flex-wrap: wrap; */
+}
+
+.header__nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 600;
+  font-family: "Nunito";
+  list-style: none;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  padding: 0;
+}
+
+.header__nav li {
+  margin: 10px;
+}
+
+.header__bannerText {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+  font-family: "Nunito";
+}
+
+.header__bannerText h1 {
+  font-size: 5rem;
+}
+
+.header__bannerText h2 {
+  font-weight: 400;
+}
+
+.header__icon {
+  position: absolute !important;
+  bottom: 100px;
+}

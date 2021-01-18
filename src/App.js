@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import About from './components/About';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import { CssBaseline } from '@material-ui/core';
+import Contact from './components/Contact';
+import Skills from './components/Skills';
+import { skills } from './myData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CssBaseline />
+      <Header/>
+      <About />
+      <Skills skills={skills}/>
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
