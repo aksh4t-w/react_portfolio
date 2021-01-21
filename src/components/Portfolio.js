@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ImgMediaCard from './Card'
 import {projects} from '../myData'
 import '../css/Portfolio.css'
-import useWindowPosition from '../hook/useWindowPosition'
+import useWindowPosition from '../hooks/useWindowPosition'
 import Grid from '@material-ui/core/Grid'
 
 const Portfolio = () => {

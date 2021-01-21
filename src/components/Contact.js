@@ -27,7 +27,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <h1>Get in touch</h1>
             <IconButton>
                 <EmailIcon className="contact__icon" style={{ color:"white", fontSize: "5rem" }}/>

@@ -35,6 +35,10 @@
   width: 40%;
 }
 
+.contact textarea {
+  height: 30vh;
+}
+
 .contact input:focus,
 .contact textarea:focus {
   background: #0b5e61;

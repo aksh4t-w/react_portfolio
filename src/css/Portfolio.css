@@ -1,6 +1,7 @@
 .portfolio {
   background: url("climber.jpg");
   height: 100vh;
+  background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
 
