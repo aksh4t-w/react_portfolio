@@ -6,6 +6,7 @@ const Skills = ({skills}) => {
         <div className="skills" id="skills">
             <h1>SKILLS</h1>
             <div className="skills__container">
+                <p>Languages and technologies that I have worked in:</p>
                 {skills.map(skill => (
                     <div className="skills__bar">
                         <li style={{width: skill.level}}>

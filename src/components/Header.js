@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button'
 import '../css/Header.css'
 import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import {Link as Scroll} from 'react-scroll'
+import useWindowPosition from '../hooks/useWindowPosition'
 
 const useStyles = makeStyles({
     button: {
@@ -19,16 +20,18 @@ const useStyles = makeStyles({
         fontSize: '1rem'
     },
     expand: {
-        color: 'rgba(256,256,256, 0.8)',
+        color: 'rgba(256,256,256, 0.9)',
         fontSize: '3rem',
     }
 })
 
 const Header = ({activeSection}) => {
     const classes = useStyles()
+    const nav_dark = useWindowPosition('header')
+
     return (
         <div className="header" id='header'>
-            <ul className="header__nav" id='header__nav'>
+            <ul className={`header__nav ${nav_dark && 'dark_bg'}`} id='header__nav'>
                 <Scroll to="header" smooth={true}>
                     <li className={`${activeSection==='header' ? 'selected' : ''}`} href="home">HOME</li>
                 </Scroll>

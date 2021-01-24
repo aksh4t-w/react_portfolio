@@ -1,29 +1,40 @@
 .contact {
   background: #191919;
-  padding-top: 96px;
-  padding-bottom: 102px;
+  padding: 50px;
   color: #636363;
 }
 
 .contact form {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   box-sizing: border-box;
 }
 
+.contact__icon {
+  position: relative;
+  left: 17%;
+}
+
 .contact label {
-  font: 15px/24px "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 12px 0;
   color: #ebeeee;
   /* display: inline-block; */
   float: left;
   width: 20%;
-  font-size: large;
-  font-weight: 600;
+  font-size: medium;
+  font-weight: bold;
   padding: 10px;
+}
+
+.required {
+  color: #11abb0;
+  font-size: 13px;
 }
 
 .contact input,
 .contact textarea {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
   padding: 18px 20px;
   background: #373233;
   color: #eee;
@@ -61,9 +72,10 @@
   padding: 20px;
   letter-spacing: 3px;
   cursor: pointer;
-  margin-left: 22.2%;
+  margin-left: 23.6%;
   display: inline-block;
   border-radius: 5px;
+  transition: all 400ms ease-in-out;
 }
 
 .contact button.submit:hover {

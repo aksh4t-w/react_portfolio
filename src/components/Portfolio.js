@@ -15,7 +15,7 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll')
     },[])
 
-    const animate = useWindowPosition('header')
+    const animate = useWindowPosition('skills')
     // console.log(offsetY)
     return (
         <div className="portfolio" id="portfolio" style={{transform: `translateY(${-offsetY*0.5})`}}>

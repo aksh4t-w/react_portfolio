@@ -24,27 +24,31 @@ const Contact = () => {
             window.alert("Error sending...")
             console.log(error.text);
         });
+
+        setName('')
+        setSubject('')
+        setEmail('')
+        setMessage('')
     }
 
     return (
         <div className="contact" id="contact">
-            <h1>Get in touch</h1>
-            <IconButton>
-                <EmailIcon className="contact__icon" style={{ color:"white", fontSize: "5rem" }}/>
+            <IconButton className="contact__icon">
+                <EmailIcon style={{ color:"white", fontSize: "6rem" }}/>
             </IconButton>
             <div className="contact__form">
                 <form className="container" onSubmit={handleSubmit}>
                   <div>
                         <label htmlFor="contactName">Name <span className="required">*</span></label>
                         <input value={name} type="text" defaultValue="" size="35" 
-                        id="contactName" name="contactName" 
+                        id="contactName" name="contactName" required
                         onChange={e => setName(e.target.value)}/>
                   </div>
 
                   <div>
 						<label htmlFor="contactEmail">Email <span className="required">*</span></label>
                         <input value={email} type="text" defaultValue="" size="35" 
-                        id="contactEmail" name="contactEmail" 
+                        id="contactEmail" name="contactEmail" required
                         onChange={e=> setEmail(e.target.value)}/>
                   </div>
 
@@ -58,7 +62,7 @@ const Contact = () => {
                   <div>
                         <label htmlFor="contactMessage">Message <span className="required">*</span></label>
                         <textarea value={message} 
-                        onChange={e => setMessage(e.target.value)} cols="50" rows="15" 
+                        onChange={e => setMessage(e.target.value)} cols="50" rows="15" required
                         id="contactMessage" name="contactMessage"></textarea>
                   </div>
 

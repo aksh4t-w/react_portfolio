@@ -9,25 +9,30 @@
 
 .skills h1 {
   position: absolute;
-  font-family: "Open Sans", sans-serif;
-  color: gray;
+  font-family: "Open Sans", "Nunito", sans-serif;
+  color: rgb(223, 203, 203);
   border-bottom: 3px solid lightgray;
-  top: 2rem;
-  left: 5rem;
+  top: 5rem;
+  left: 20rem;
   /* padding: 10px 0 0 100px; */
 }
 
 .skills__container {
-  /* margin: auto; */
-  margin-left: 10%;
   padding: 50px;
   width: 40%;
   box-sizing: border-box;
 }
 
+.skills__container p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: rgb(223, 203, 203);
+  margin-bottom: 50px;
+}
+
 .skills__bar {
   position: relative;
-  height: 42px;
+  height: 35px;
   background-color: #413651;
   width: 100%;
   border-radius: 3px;
@@ -35,13 +40,10 @@
 }
 
 .skills__bar li {
-  position: relative;
-  left: 0;
-  top: 0;
-  background-color: #ee0e40;
+  background-color: #673ab7;
   list-style: none;
   border-radius: 3px 0 0 3px;
-  height: 42px;
+  height: 35px;
 }
 
 .skills__bar li span {
@@ -49,6 +51,6 @@
   top: -30px;
   font-family: "Open Sans", sans-serif;
   font-size: medium;
-  color: white;
+  color: rgb(223, 203, 203);
   text-transform: uppercase;
 }

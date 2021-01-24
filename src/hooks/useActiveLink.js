@@ -22,7 +22,7 @@ export default function useActiveLink(){
 
         const handleScroll = () => {
             const {height: headerHeight} = getDimensions(headerRef)
-            const scrollPosition = window.scrollY + headerHeight
+            const scrollPosition = window.scrollY + headerHeight + 200
             
             const selected = sectionRefs.find(({section, ref}) => {
                 const element = ref

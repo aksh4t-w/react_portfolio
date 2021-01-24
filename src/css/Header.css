@@ -12,7 +12,7 @@
 }
 
 .header__nav {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.1); */
   color: white;
   font-weight: 600;
   font-family: "Nunito";
@@ -23,6 +23,14 @@
   top: -10px;
   padding: 0 10px;
   z-index: 10;
+
+  transition-timing-function: ease-in;
+  transition: all 500ms;
+}
+
+.dark_bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
 
 .header__nav li {
@@ -36,13 +44,13 @@
 
 .header__nav li:hover {
   cursor: pointer;
-  color: rgba(1, 1, 1, 1);
+  color: rgba(238, 202, 202, 0.8);
 }
 
 .header__bannerText {
   text-align: center;
   display: inline-block;
-  margin: 0 auto;
+  margin-bottom: 6%;
   color: white;
   font-family: "Nunito";
 }
@@ -59,3 +67,12 @@
   position: absolute !important;
   bottom: 100px;
 }
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+} */

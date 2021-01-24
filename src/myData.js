@@ -28,7 +28,7 @@ export const projects = [
 export const skills = [
       {
         "name": "ReactJs",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "HTML5",
@@ -36,7 +36,7 @@ export const skills = [
       },
       {
         "name": "CSS",
-        "level": "70%"
+        "level": "80%"
       },
       {
         "name": "Git",
