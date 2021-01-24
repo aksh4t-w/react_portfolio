@@ -7,6 +7,7 @@ import '../css/Header.css'
 import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import {Link as Scroll} from 'react-scroll'
 import useWindowPosition from '../hooks/useWindowPosition'
+import Grow from '@material-ui/core/Grow'
 
 const useStyles = makeStyles({
     button: {
@@ -28,32 +29,34 @@ const useStyles = makeStyles({
 const Header = ({activeSection}) => {
     const classes = useStyles()
     const nav_dark = useWindowPosition('header')
-
     return (
         <div className="header" id='header'>
-            <ul className={`header__nav ${nav_dark && 'dark_bg'}`} id='header__nav'>
-                <Scroll to="header" smooth={true}>
-                    <li className={`${activeSection==='header' ? 'selected' : ''}`} href="home">HOME</li>
-                </Scroll>
-                <Scroll to="about" smooth={true}>
-                    <li className={`${activeSection==='about' ? 'selected' : ''}`} href="about">ABOUT</li>
-                </Scroll>
-                <Scroll to="skills" smooth={true}>
-                    <li className={`${activeSection==='skills' ? 'selected' : ''}`} href="skills">SKILLS</li>
-                </Scroll>
-                <Scroll to="portfolio" smooth={true}>
-                    <li className={`${activeSection==='portfolio' ? 'selected' : ''}`} href="projects">PROJECTS</li>
-                </Scroll>
-                <Scroll to="contact" smooth={true}>
-                    <li className={`${activeSection==='contact' ? 'selected' : ''}`} href="contact">CONTACT</li>
-                </Scroll>
-
-            </ul>
+            <Grow in={true} timein={1000} timeout={2000}>
+                <ul className={`header__nav ${nav_dark ? 'dark_bg' : ''}`} id='header__nav'>
+                    <Scroll to="header" smooth={true}>
+                        <li className={`${activeSection==='header' ? 'selected' : ''}`} href="home">HOME</li>
+                    </Scroll>
+                    <Scroll to="about" smooth={true}>
+                        <li className={`${activeSection==='about' ? 'selected' : ''}`} href="about">ABOUT</li>
+                    </Scroll>
+                    <Scroll to="skills" smooth={true}>
+                        <li className={`${activeSection==='skills' ? 'selected' : ''}`} href="skills">SKILLS</li>
+                    </Scroll>
+                    <Scroll to="portfolio" smooth={true}>
+                        <li className={`${activeSection==='portfolio' ? 'selected' : ''}`} href="projects">PROJECTS</li>
+                    </Scroll>
+                    <Scroll to="contact" smooth={true}>
+                        <li className={`${activeSection==='contact' ? 'selected' : ''}`} href="contact">CONTACT</li>
+                    </Scroll>
+                </ul>
+            </Grow>
             
-            <div className="header__bannerText">
-                <h1>I'm Akshat Wagadre.</h1>
-                <h2>I'm a ReactJS Developer && an ML Enthusiast. Full Stack React Developer by Day, Freelancer by Night.</h2>
-            </div>
+            <Grow in={true} timeout={1800}>
+                <div className="header__bannerText">
+                    <h1>I'm Akshat Wagadre.</h1>
+                    <h2>I'm a ReactJS Developer && an ML Enthusiast. Full Stack React Developer by Day, Freelancer by Night.</h2>
+                </div>
+            </Grow>
 
             <Scroll className="header__icon" to="about" smooth={true}>
                 <IconButton>

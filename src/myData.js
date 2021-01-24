@@ -18,7 +18,7 @@ export const projects = [
         description: 'Whatsapp web clone made using MongoDB, Express, NodeJS and React.'
     },
     {
-        title: 'Research Paper in Machine Learning',
+        title: 'Research Paper in ML',
         img_path : '/images/paper.png',
         url: 'http://sersc.org/journals/index.php/IJAST/article/view/28156',
         description: 'Human Activity recognition using Deep Learning Models.'

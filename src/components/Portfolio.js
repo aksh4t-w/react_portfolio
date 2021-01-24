@@ -6,21 +6,23 @@ import useWindowPosition from '../hooks/useWindowPosition'
 import Grid from '@material-ui/core/Grid'
 
 const Portfolio = () => {
-    const [offsetY, setoffsetY] = useState(0)
-    const handleScroll = () => setoffsetY(window.pageYOffset)
+    // const [offsetY, setoffsetY] = useState(0)
+    // const handleScroll = () => setoffsetY(window.pageYOffset)
   
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+    // useEffect(() => {
+    //     window.addEventListener('scroll', handleScroll)
     
-    return () => window.removeEventListener('scroll')
-    },[])
+    // return () => window.removeEventListener('scroll')
+    // },[])
 
-    const animate = useWindowPosition('skills')
     // console.log(offsetY)
+    // style={{transform: `translateY(${-offsetY*0.5})`}}
+    
+    const animate = useWindowPosition('skills')
     return (
-        <div className="portfolio" id="portfolio" style={{transform: `translateY(${-offsetY*0.5})`}}>
+        <div className="portfolio" id="portfolio">
             
-            <h1>Check out some of my works:</h1>
+            <h1>Some of my works</h1>
             
             <Grid container spacing={3}>
                 <Grid item xs={6} md={3}>

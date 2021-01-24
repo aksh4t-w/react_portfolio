@@ -11,9 +11,9 @@ import { Collapse } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 400,
+    maxWidth: 380,
     minHeight: 380,
-    margin: 10,
+    margin: 20,
     backgroundColor: 'rgba(0,0,0,0.3)',
     transition: 'transform 200ms',
     '&:hover':{

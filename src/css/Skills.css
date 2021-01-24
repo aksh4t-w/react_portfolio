@@ -9,11 +9,11 @@
 
 .skills h1 {
   position: absolute;
-  font-family: "Open Sans", "Nunito", sans-serif;
-  color: rgb(223, 203, 203);
+  font-family: "Oxygen", "Nunito", sans-serif;
+  color: white;
   border-bottom: 3px solid lightgray;
-  top: 5rem;
-  left: 20rem;
+  top: 3rem;
+  left: 19%;
   /* padding: 10px 0 0 100px; */
 }
 
@@ -24,8 +24,9 @@
 }
 
 .skills__container p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: "Oxygen", "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(223, 203, 203);
   margin-bottom: 50px;
 }
@@ -33,14 +34,14 @@
 .skills__bar {
   position: relative;
   height: 35px;
-  background-color: #413651;
+  background-color: #39494e;
   width: 100%;
   border-radius: 3px;
   margin-bottom: 45px;
 }
 
 .skills__bar li {
-  background-color: #673ab7;
+  background-color: #c6e0df;
   list-style: none;
   border-radius: 3px 0 0 3px;
   height: 35px;

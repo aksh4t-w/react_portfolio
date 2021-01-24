@@ -14,6 +14,10 @@
   left: 17%;
 }
 
+.contact__icon :hover {
+  cursor: auto;
+}
+
 .contact label {
   font-family: "Open Sans", sans-serif;
   margin: 12px 0;

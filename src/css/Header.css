@@ -15,7 +15,9 @@
   /* background-color: rgba(0, 0, 0, 0.1); */
   color: white;
   font-weight: 600;
-  font-family: "Nunito";
+  font-size: 15px;
+  font-family: "Oxygen", "Nunito", sans-serif;
+  letter-spacing: 0.13rem;
   list-style: none;
   border-radius: 0 0 50px 50px;
   display: flex;
@@ -24,17 +26,17 @@
   padding: 0 10px;
   z-index: 10;
 
-  transition-timing-function: ease-in;
-  transition: all 500ms;
+  transition: all 500ms ease-in !important;
 }
 
 .dark_bg {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 1;
+  background-color: rgba(48, 1, 32, 0.8);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .header__nav li {
   margin: 10px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .header__nav li.selected {
@@ -52,7 +54,8 @@
   display: inline-block;
   margin-bottom: 6%;
   color: white;
-  font-family: "Nunito";
+  font-family: "Oxygen", "Nunito", "Open Sans";
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .header__bannerText h1 {
