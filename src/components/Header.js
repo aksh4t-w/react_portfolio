@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import SortIcon from '@material-ui/icons/Sort'
 import {AppBar, IconButton} from '@material-ui/core'
@@ -8,6 +8,9 @@ import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import {Link as Scroll} from 'react-scroll'
 import useWindowPosition from '../hooks/useWindowPosition'
 import Grow from '@material-ui/core/Grow'
+import MenuIcon from '@material-ui/icons/Menu'
+import CloseIcon from '@material-ui/icons/Close'
+import HomeIcon from '@material-ui/icons/Home'
 
 const useStyles = makeStyles({
     button: {
@@ -26,33 +29,48 @@ const useStyles = makeStyles({
     }
 })
 
-const Header = ({activeSection}) => {
+const Header = ({activeSection, view}) => {
     const classes = useStyles()
     const nav_dark = useWindowPosition('header')
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+    
     return (
         <div className="header" id='header'>
+            {/* <div className={click ? "nav-menu active" : "nav-menu"}>
+            </div> */}
+
             <Grow in={true} timein={1000} timeout={2000}>
-                <ul className={`header__nav ${nav_dark ? 'dark_bg' : ''}`} id='header__nav'>
+                <ul className={click ? `header__nav active` : `header__nav ${nav_dark ? 'dark_bg' : ''}`} id='header__nav'>
+                <div className="filler"></div>
                     <Scroll to="header" smooth={true}>
-                        <li className={`${activeSection==='header' ? 'selected' : ''}`} href="home">HOME</li>
+                        <li className={`${activeSection==='header' ? 'selected' : ''}`} href="home" onClick={handleClick}>HOME</li>
                     </Scroll>
                     <Scroll to="about" smooth={true}>
-                        <li className={`${activeSection==='about' ? 'selected' : ''}`} href="about">ABOUT</li>
+                        <li className={`${activeSection==='about' ? 'selected' : ''}`} href="about" onClick={handleClick}>ABOUT</li>
                     </Scroll>
                     <Scroll to="skills" smooth={true}>
-                        <li className={`${activeSection==='skills' ? 'selected' : ''}`} href="skills">SKILLS</li>
+                        <li className={`${activeSection==='skills' ? 'selected' : ''}`} href="skills" onClick={handleClick}>SKILLS</li>
                     </Scroll>
                     <Scroll to="portfolio" smooth={true}>
-                        <li className={`${activeSection==='portfolio' ? 'selected' : ''}`} href="projects">PROJECTS</li>
+                        <li className={`${activeSection==='portfolio' ? 'selected' : ''}`} href="projects" onClick={handleClick}>PROJECTS</li>
                     </Scroll>
                     <Scroll to="contact" smooth={true}>
-                        <li className={`${activeSection==='contact' ? 'selected' : ''}`} href="contact">CONTACT</li>
+                        <li className={`${activeSection==='contact' ? 'selected' : ''}`} href="contact" onClick={handleClick}>CONTACT</li>
                     </Scroll>
                 </ul>
             </Grow>
+ 
+            {view ? 
+            <div className={`menu-bar ${activeSection==='header' ? 'disappear':''}`} onClick={handleClick}>
+                <Scroll to="header" smooth={true}>
+                    <HomeIcon className="homeIcon"/>
+                </Scroll>
+                {click ? <CloseIcon className="closeIcon"/> : <MenuIcon className="menuIcon"/>}
+            </div> : ''}
             
             <Grow in={true} timeout={1800}>
-                <div className="header__bannerText">
+                <div className={"header__bannerText"}>
                     <h1>I'm Akshat Wagadre.</h1>
                     <h2>I'm a ReactJS Developer && an ML Enthusiast. Full Stack React Developer by Day, Freelancer by Night.</h2>
                 </div>

@@ -34,7 +34,7 @@ const Contact = () => {
     return (
         <div className="contact" id="contact">
             <IconButton className="contact__icon">
-                <EmailIcon style={{ color:"white", fontSize: "6rem" }}/>
+                <EmailIcon className="email__icon" style={{ color:"white", fontSize: "6rem" }}/>
             </IconButton>
             <div className="contact__form">
                 <form className="container" onSubmit={handleSubmit}>

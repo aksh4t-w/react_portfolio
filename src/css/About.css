@@ -36,3 +36,32 @@
 .address {
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 720px) {
+  .about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Oxygen", "Nunito", sans-serif;
+  }
+
+  .about__avatar {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .about__avatar img {
+    width: 100%;
+    border-radius: 2%;
+    object-fit: fill;
+    /* margin-left: 60%; */
+  }
+
+  .about__me {
+    box-sizing: border-box;
+    color: white;
+    width: 90%;
+  }
+}

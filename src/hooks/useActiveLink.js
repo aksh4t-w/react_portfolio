@@ -13,16 +13,16 @@ export default function useActiveLink(){
         const contactRef = window.document.getElementById('contact')
         
         const sectionRefs = [
-        {section: 'header', ref: homeRef},
-        {section: 'about', ref: aboutRef},
-        {section: 'skills', ref: skillsRef},
-        {section: 'portfolio', ref: portfolioRef},
-        {section: 'contact', ref: contactRef}
+            {section: 'header', ref: homeRef},
+            {section: 'about', ref: aboutRef},
+            {section: 'skills', ref: skillsRef},
+            {section: 'portfolio', ref: portfolioRef},
+            {section: 'contact', ref: contactRef}
         ]
 
         const handleScroll = () => {
             const {height: headerHeight} = getDimensions(headerRef)
-            const scrollPosition = window.scrollY + headerHeight + 200
+            const scrollPosition = window.scrollY + 250 //headerHeight removed
             
             const selected = sectionRefs.find(({section, ref}) => {
                 const element = ref

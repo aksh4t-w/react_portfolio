@@ -11,6 +11,14 @@
   /* flex-wrap: wrap; */
 }
 
+/* .nav-menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-content: center;
+  z-index: 10;
+} */
+
 .header__nav {
   /* background-color: rgba(0, 0, 0, 0.1); */
   color: white;
@@ -79,3 +87,118 @@
     opacity: 1;
   }
 } */
+
+/* CSS for phones */
+@media screen and (max-width: 720px) {
+  .header__bannerText {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 6%;
+    color: white;
+    font-family: "Oxygen", "Nunito", "Open Sans";
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+
+  .header__bannerText h1 {
+    font-size: 3rem;
+    position: relative;
+    top: -15px;
+  }
+
+  .header__bannerText h2 {
+    font-size: 20px;
+    font-family: "Nunito", "Open Sans";
+  }
+  .filler {
+    background-color: #1c2237;
+    height: 10vh;
+  }
+  .header__nav {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    align-items: flex-end;
+    z-index: 100;
+  }
+
+  .header__nav li {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  .header__nav.dark_bg {
+    background: transparent;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0);
+  }
+
+  .header__nav.active {
+    background: rgba(18, 11, 46, 0.9);
+    left: -70%;
+    opacity: 1;
+    z-index: 100;
+    transition: all 0.6s ease;
+  }
+
+  .menu-bar {
+    display: block;
+    position: fixed;
+    background: rgba(12, 12, 14, 0.9);
+    color: white;
+    /* height: 30px; */
+    width: 100vw;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* transform: translate(-100%, 60%); */
+    /* font-size: 2rem; */
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-in;
+  }
+
+  .disappear {
+    background: transparent;
+  }
+
+  .homeIcon {
+    padding-left: 20px;
+  }
+
+  /* .closeIcon {
+    color: white;
+  }
+
+  .menuIcon {
+    color: white;
+  } */
+
+  /* .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  } */
+
+  /* .nav-item:hover {
+    border: none;
+  }
+
+ */
+}

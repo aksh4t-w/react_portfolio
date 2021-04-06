@@ -18,7 +18,7 @@
   top: 0;
   color: rgb(255, 255, 255);
   /* background-color: rgba(0, 0, 0, 0.4); */
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Oxygen", "Nunito", sans-serif;
   border-bottom: 1px lightgray solid;
   /* text-transform: uppercase; */
@@ -29,4 +29,25 @@
   color: blueviolet !important;
   background-color: yellow !important;
   padding: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  .portfolio {
+    background: url("climber.jpg");
+    height: 100vh;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    background-position: 20% 0;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .projects {
+    position: absolute;
+    top: 100px;
+  }
 }

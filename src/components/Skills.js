@@ -4,7 +4,7 @@ import '../css/Skills.css'
 const Skills = ({skills}) => {
     return (
         <div className="skills" id="skills">
-            <h1>SKILLS</h1>
+            <h1>Skills</h1>
             <div className="skills__container">
                 <p>Languages and technologies that I have worked in:</p>
                 {skills.map(skill => (

@@ -22,22 +22,24 @@ const Portfolio = () => {
     return (
         <div className="portfolio" id="portfolio">
             
-            <h1>Some of my works</h1>
+            <h1>Projects</h1>
             
-            <Grid container spacing={3}>
-                <Grid item xs={6} md={3}>
-                    <ImgMediaCard project={projects[0]} animate={animate}/>
+            <div className="projects">
+                <Grid container spacing={3}>
+                    <Grid item xs={12} md={3}>
+                        <ImgMediaCard project={projects[0]} animate={animate}/>
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                        <ImgMediaCard project={projects[1]} animate={animate}/>
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                        <ImgMediaCard project={projects[2]} animate={animate}/>
+                    </Grid>
+                    <Grid item xs={12} md={3}>
+                        <ImgMediaCard project={projects[3]} animate={animate}/>
+                    </Grid>
                 </Grid>
-                <Grid item item xs={6} md={3}>
-                    <ImgMediaCard project={projects[1]} animate={animate}/>
-                </Grid>
-                <Grid item item xs={6} md={3}>
-                    <ImgMediaCard project={projects[2]} animate={animate}/>
-                </Grid>
-                <Grid item item xs={6} md={3}>
-                    <ImgMediaCard project={projects[3]} animate={animate}/>
-                </Grid>
-            </Grid>
+            </div>
         </div>
     )
 }
