@@ -12,7 +12,7 @@
 .contact__icon {
   position: relative;
   font-size: 6rem;
-  left: 17%;
+  left: 14%;
 }
 
 .contact__icon :hover {
@@ -80,7 +80,7 @@
   margin-left: 23.6%;
   display: inline-block;
   border-radius: 5px;
-  transition: all 400ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .contact button.submit:hover {
@@ -104,16 +104,16 @@
     box-sizing: border-box;
   }
 
-  .contact__icon {
-    position: relative;
+  /* .contact__icon {
+    position: relative !important;
     font-size: 6rem;
     top: 1rem;
-    left: 5%;
-  }
+    left: 0;
+  } */
 
-  .contact__icon :hover {
+  /* .contact__icon :hover {
     cursor: auto;
-  }
+  } */
 
   .contact label {
     font-family: "Open Sans", sans-serif;
@@ -168,7 +168,7 @@
     text-transform: uppercase;
     padding: 15px 20px;
     letter-spacing: 3px;
-    margin-left: 27%;
+    margin-left: 29%;
     display: inline-block;
     border-radius: 5px;
     transition: all 400ms ease-in-out;

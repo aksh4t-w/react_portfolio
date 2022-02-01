@@ -66,7 +66,7 @@ const Contact = () => {
                         id="contactMessage" name="contactMessage"></textarea>
                   </div>
 
-                  <div>
+                  <div className='btn__container'>
                      <button type='submit' className="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />

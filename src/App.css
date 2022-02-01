@@ -1,14 +1,19 @@
-.App {
-  /* display: grid; */
-  /* place-items: center; */
-  background-color: #0f2d2e;
-  background-repeat: no-repeat;
-  /* background-size: "cover"; */
-}
-
 body {
   margin: 0;
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6f6783;
+  border-radius: 10px;
 }
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
